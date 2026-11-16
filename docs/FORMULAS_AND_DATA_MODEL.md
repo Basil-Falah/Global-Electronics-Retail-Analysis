@@ -18,9 +18,9 @@ The following are the formulas found in the uploaded workbook. Structured refere
 | Sales column | Formula | Purpose |
 |---|---|---|
 | `Product Name` | `=XLOOKUP(Sales[[#This Row],[ProductKey]],Products[ProductKey],Products[Product Name],"Not Found")` | Retrieves the product name using `ProductKey`. |
-| `Gender` | `=XLOOKUP(Sales[[#This Row],[CustomerKey]],'Customers'!A:A,'Customers'!B:B,"Not Found")` | Retrieves customer gender using `CustomerKey`. |
-| `Customer Name` | `=XLOOKUP(Sales[[#This Row],[CustomerKey]],'Customers'!A:A,'Customers'!C:C,"Not Found")` | Retrieves customer name using `CustomerKey`. |
-| `Country` | `=XLOOKUP(Sales[[#This Row],[CustomerKey]],'Customers'!A:A,'Customers'!H:H,"Not Found")` | Retrieves the customer's country. This is the customer-market field. |
+| `Gender` | `=XLOOKUP(Sales[[#This Row],[CustomerKey]],Customers[CustomerKey],Customers[Gender],"Not Found")` | Retrieves customer gender using `CustomerKey`. |
+| `Customer Name` | `=XLOOKUP(Sales[[#This Row],[CustomerKey]],Customers[CustomerKey],Customers[Name],"Not Found")` | Retrieves customer name using `CustomerKey`. |
+| `Country` | `=XLOOKUP(Sales[[#This Row],[CustomerKey]],Customers[CustomerKey],Customers[Country],"Not Found")` | Retrieves the customer's country. This is the customer-market field. |
 | `Unit Price` | `=XLOOKUP(Sales[[#This Row],[ProductKey]],Products[ProductKey],Products[Unit Price USD],"Not Found")` | Retrieves unit selling price in USD. |
 | `Total Revenue` | `=Sales[[#This Row],[Quantity]]*Sales[[#This Row],[Unit Price]]` | Quantity multiplied by unit selling price. |
 | `Total Cost` | `=Sales[[#This Row],[Quantity]]*XLOOKUP(Sales[[#This Row],[ProductKey]],Products[ProductKey],Products[Unit Cost USD],"Not Found")` | Quantity multiplied by product unit cost in USD. |
