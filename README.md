@@ -55,3 +55,10 @@ The supplied analysis workbook was inspected without saving or modifying it. The
 3. Open the Dashboard workbook to explore the interactive visual analysis.
 
 **Compatibility:** The analysis workbook uses `XLOOKUP`, which requires a recent Excel version (Microsoft 365 or Excel 2021 and later).
+
+## Dataset Source
+The dataset used in this project is the Global Electronics Retailer dataset from Maven Analytics.
+Source: https://mavenanalytics.io/data-playground/global-electronics-retailer. 
+
+## AI Assistance & Acknowledgment
+AI was used to assist with the visual design of the Excel dashboard. The rest of the project work was carried out by me.
